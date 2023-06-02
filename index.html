@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>News Letter</title>
+  </head>
+  <body>
+    <main class="box">
+      <div id="white-side">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <table>
+          <tr>
+            <td class="list-decoration"></td>
+            <td>Product discovery and building what matters</td>
+          </tr>
+          <tr>
+            <td class="list-decoration"></td>
+            <td>Measuring to ensure updates are a success</td>
+          </tr>
+          <tr>
+            <td class="list-decoration"></td>
+            <td>And much more!</td>
+          </tr>
+        </table>
+        <form novalidate>
+          <div id="labels">
+            <label for="email">Email Address</label>
+            <span id="error-message"></span>
+          </div>
+          <input
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+            required
+          />
+          <button id="submit-button" type="submit">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+      <div id="orange-side">
+        <div id="orange-image"></div>
+      </div>
+    </main>
+    <dialog class="box">
+      <div id="dialog-content">
+        <img src="./images/success.svg" />
+        <h2>Thanks for subscribing!</h2>
+        <p>
+          A confirmation email has been sent to <span></span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button id="dismiss-button">Dismiss message</button>
+      </div>
+    </dialog>
+    <!--JS-->
+    <script src="./app.js"></script>
+  </body>
+</html>
